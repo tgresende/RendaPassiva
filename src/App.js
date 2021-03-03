@@ -6,14 +6,13 @@ import {
   Link
 } from "react-router-dom";
 
+import pages from "./pages";
+
 
 function Home() {
   return <h2>Home</h2>;
 }
 
-function Login() {
-  return <h2>Login</h2>;
-}
 
 function App() {
   return (
@@ -37,7 +36,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/">
-          <Login />
+          <pages.Login />
         </Route>
       </Switch>
     </div>
