@@ -1,12 +1,33 @@
 
 import React from "react";
 
+import buttons from "../../components/buttons";
+import inputs from "../../components/inputs";
+
+
+import {
+    Container,
+    LoginContainer,
+    titleInput,
+} from "./styles";
+
 const Login = () =>{
 
     return(
-        <div>
-            <a>login</a>
-        </div>
+        <Container>
+            <LoginContainer>
+                <inputs.TextInput
+                    placeholder={"e-mail"}
+                    marginBottom={8}
+                />
+                <inputs.TextInput
+                    placeholder={"senha"}
+                />
+                <buttons.MainButton 
+                    text="Entrar"
+                />
+            </LoginContainer>
+        </Container>
     );
 }
 
