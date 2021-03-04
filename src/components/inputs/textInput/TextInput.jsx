@@ -1,7 +1,7 @@
 
 import React from "react";
 
-import Input from "./styles";
+import {Input} from "./styles";
 
 const TextInput = ({
     marginBottom=24,
@@ -10,12 +10,11 @@ const TextInput = ({
 }) =>{
 
     return(
-        <Input 
-            marginBottom={marginBottom}
-            placeholder={placeholder}
-            maxWidth={maxWidth}
-        />
-
+            <Input 
+                marginBottom={marginBottom}
+                placeholder={placeholder}
+                maxWidth={maxWidth}
+            />
     );
 }
 

@@ -1,5 +1,6 @@
 
 import React from "react";
+import MoneyMark from "../../assets/svg/MoneyMark";
 
 import buttons from "../../components/buttons";
 import inputs from "../../components/inputs";
@@ -8,7 +9,9 @@ import inputs from "../../components/inputs";
 import {
     Container,
     LoginContainer,
-    titleInput,
+    LoginTextContainer,
+    LoginText,
+    LinkText,
 } from "./styles";
 
 const Login = () =>{
@@ -16,16 +19,25 @@ const Login = () =>{
     return(
         <Container>
             <LoginContainer>
+                <LoginTextContainer>
+                    <MoneyMark/>
+                    <LoginText>
+                        LOG IN
+                    </LoginText>
+                </LoginTextContainer>
                 <inputs.TextInput
-                    placeholder={"e-mail"}
+                    placeholder={"seu e-mail"}
                     marginBottom={8}
                 />
                 <inputs.TextInput
-                    placeholder={"senha"}
+                    placeholder={"sua senha"}
                 />
                 <buttons.MainButton 
-                    text="Entrar"
+                    text="entrar"
                 />
+                <LinkText>
+                    esqueci minha senha
+                </LinkText>
             </LoginContainer>
         </Container>
     );
