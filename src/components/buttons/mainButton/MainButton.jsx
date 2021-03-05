@@ -1,21 +1,20 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import React from "react";
-
-
-import Button from "./styles";
+import Button from './styles';
 
 const MainButton = ({
-    text= "default text",
-}
-) =>{
+  text = 'default text',
+}) => (
+  <div>
+    <Button>
+      {text}
+    </Button>
+  </div>
+);
 
-    return(
-        <div>
-            <Button>
-                {text}
-            </Button>
-        </div>
-    );
-}
+MainButton.propTypes = {
+  text: PropTypes.number.isRequired,
+};
 
 export default MainButton;

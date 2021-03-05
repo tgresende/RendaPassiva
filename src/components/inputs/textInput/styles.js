@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import colors from "../../../constants/styles/Colors";
+import colors from '../../../constants/styles/Colors';
 
 export const Input = styled.input`
   border: none;
@@ -28,6 +28,5 @@ export const Input = styled.input`
     color: ${colors.grayLight2};
   }
 `;
-
 
 export default Input;

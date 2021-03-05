@@ -1,28 +1,33 @@
 import styled from 'styled-components';
 
-import colors from "../../constants/styles/Colors";
+import colors from '../../constants/styles/Colors';
 
 export const Container = styled.div`
+    background: ${colors.grayLight4};
+    position:fixed;
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 `;
 
-
 export const LoginContainer = styled.div`
-    background: ${colors.white};
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    border: 2px solid ${colors.gray};
     padding: 24px;
-    width: 60%;
+    margin-bottom: 48px;
 `;
 
 export const LoginTextContainer = styled.div`
-    padding: 24px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const LoginText = styled.text`
@@ -32,13 +37,9 @@ export const LoginText = styled.text`
 `;
 
 export const LinkText = styled.text`
-    margin-top: 16px;
+    margin: 16px;
     font-size: 18px;
     color: ${colors.grayLight3};
 `;
-
-
-
-
 
 export default Container;

@@ -1,9 +1,7 @@
-import TextInput from "./textInput/TextInput";
-
+import TextInput from './textInput/TextInput';
 
 const inputs = {
-    TextInput,
-}
-
+  TextInput,
+};
 
 export default inputs;

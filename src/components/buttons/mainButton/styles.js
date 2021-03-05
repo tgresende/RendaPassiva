@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import colors from "../../../constants/styles/Colors";
-
+import colors from '../../../constants/styles/Colors';
 
 const Button = styled.button`
   background: ${colors.blueWater};
@@ -13,7 +12,11 @@ const Button = styled.button`
   :focus, textarea:focus, select:focus{
     outline: none;
   }
-`;
 
+  :hover {
+    background-color: ${colors.blackLight};
+    color: ${colors.blueWater};
+  }
+`;
 
 export default Button;

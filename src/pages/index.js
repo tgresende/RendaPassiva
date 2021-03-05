@@ -1,9 +1,7 @@
-import Login from "./login/Login";
-
+import Login from './login/Login';
 
 const pages = {
-    Login,
-}
-
+  Login,
+};
 
 export default pages;

@@ -1,9 +1,7 @@
-import MainButton from "./mainButton/MainButton";
-
+import MainButton from './mainButton/MainButton';
 
 const buttons = {
-    MainButton,
-}
-
+  MainButton,
+};
 
 export default buttons;
